@@ -1,0 +1,36 @@
+/// Menunav styles. Common styles collected in main class. (For example `.typography__menunav`) More specific classes should be place inner class section.
+/// @group Fonts
+///
+.typography__menunav {
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+
+  &_15px {
+    @extend .typography__menunav;
+    font-size: 0.9375rem;
+  }
+}
+
+/// Header styles. Common styles collected in main class. (For example `.typography__header`) More specific classes should be place inner class section.
+/// @group Fonts
+///
+.typography__header {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-style: normal;
+
+  &_24px {
+    @extend .typography__header;
+    font-size: 1.5rem;
+  }
+
+  &_36px {
+    @extend .typography__header;
+    font-size: 2.25rem;
+  }
+}
+
+.typography {
+  &__400 {
+    font-weight: 400;
+  }
+}
