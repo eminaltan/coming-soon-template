@@ -11,12 +11,26 @@
   }
 }
 
+/// Header styles. Common styles collected in main class. (For example `.typography__header`) More specific classes should be place inner class section.
+/// @group Fonts
+///
 .typography__header {
   font-family: "Segoe UI", Arial, sans-serif;
   font-style: normal;
 
+  &_24px {
+    @extend .typography__header;
+    font-size: 1.5rem;
+  }
+
   &_36px {
     @extend .typography__header;
     font-size: 2.25rem;
+  }
+}
+
+.typography {
+  &__400 {
+    font-weight: 400;
   }
 }

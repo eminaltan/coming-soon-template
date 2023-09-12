@@ -5,12 +5,14 @@ import reportWebVitals from "./reportWebVitals";
 import "./_index.scss";
 import MenuNav from "./components/menunav/Menu";
 import Header from "./components/header/Header";
+import Main from "./components/main/Main";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <MenuNav />
     <Header />
+    <Main />
   </React.StrictMode>
 );
 
