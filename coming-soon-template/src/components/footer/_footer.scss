@@ -1,0 +1,25 @@
+@use "../../base/typography" as *;
+
+footer {
+  img {
+    margin: 1em 0;
+    width: 100%;
+  }
+
+  p {
+    /* ISSUE:@eminaltan think of how to p element 100vw */
+    @extend .typography__menunav_15px;
+    text-align: center;
+    padding: 0.9375em 0;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    line-height: 1em;
+
+    a {
+      color: inherit;
+      &:hover {
+        color: hsl(122, 39%, 49%);
+      }
+    }
+  }
+}

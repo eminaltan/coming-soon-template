@@ -10,7 +10,10 @@
   }
 
   header,
-  .content {
+  .content,
+  footer {
     grid-column: 2 / span 10;
   }
+
+  
 }

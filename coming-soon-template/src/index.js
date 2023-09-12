@@ -6,6 +6,7 @@ import "./_index.scss";
 import MenuNav from "./components/menunav/Menu";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
+import Footer from "./components/footer/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +14,7 @@ root.render(
     <MenuNav />
     <Header />
     <Main />
+    <Footer />
   </React.StrictMode>
 );
 
