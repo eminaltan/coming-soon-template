@@ -1,0 +1,24 @@
+@use "../../base/typography" as *;
+
+header {
+  background-image: url("https://www.w3schools.com/w3images/architect.jpg");
+  background-repeat: no-repeat;
+  aspect-ratio: 2/1;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1rem;
+
+  p {
+    @extend .typography__header_36px;
+    color: #fff;
+    position: absolute;
+
+    strong {
+      padding: 0.2222222222222222em 0.4444444444444444em;
+      background-color: #000000af;
+      margin-right: 0.2222222222222222em;
+    }
+  }
+}
