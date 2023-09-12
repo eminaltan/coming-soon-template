@@ -10,3 +10,13 @@
     font-size: 0.9375rem;
   }
 }
+
+.typography__header {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-style: normal;
+
+  &_36px {
+    @extend .typography__header;
+    font-size: 2.25rem;
+  }
+}
