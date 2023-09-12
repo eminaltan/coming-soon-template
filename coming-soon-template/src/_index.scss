@@ -4,4 +4,8 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
+
+  .menunav {
+    grid-column: 1 / span 12;
+  }
 }
