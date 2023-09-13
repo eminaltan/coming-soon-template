@@ -5,15 +5,13 @@
   grid-template-columns: repeat(12, 1fr);
   height: 100vh;
 
-  .menunav {
-    grid-column: 1 / span 12;
-  }
-
   header,
   .content,
   footer {
     grid-column: 2 / span 10;
   }
 
-  
+  footer + p {
+    grid-column: 1 / span 12;
+  }
 }
