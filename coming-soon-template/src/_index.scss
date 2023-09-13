@@ -1,13 +1,10 @@
 @use "./base/normalize" as *;
+@use "./abstracts/mixins" as *;
 
 #root {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   height: 100vh;
-
-  .menunav {
-    grid-column: 1 / span 12;
-  }
 
   header,
   .content,
@@ -15,5 +12,51 @@
     grid-column: 2 / span 10;
   }
 
-  
+  footer + p {
+    grid-column: 1 / span 12;
+  }
+
+  @include devices(mobile) {
+    .content {
+      &__wrapper {
+        flex-direction: column;
+      }
+    }
+  }
+
+  @include devices(tablet) {
+    .content {
+      &__project {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+
+        & > p {
+          flex-basis: 100%;
+        }
+
+        #{".content__wrapper"} {
+          width: calc(50% - 1em);
+          flex-direction: column;
+
+          &:last-child {
+            margin-top: 0;
+          }
+        }
+      }
+
+      &__wrapper_two {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1em;
+
+        #{".content__card"} {
+          flex-basis: calc(50% - 1em);
+        }
+      }
+    }
+  }
 }
