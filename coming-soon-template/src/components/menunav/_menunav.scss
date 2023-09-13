@@ -2,11 +2,10 @@
 
 .menunav {
   @extend .typography__menunav_15px;
-  /* TODO:@eminaltan please add background-color #fff  this component*/
-  position: sticky;
-  top: 0;
-  /*  height: 100vh;  */
-
+  background-color: hsl(0, 0%, 100%);
+  z-index: 1;
+  position: fixed;
+  width: 100vw;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
   ul {
